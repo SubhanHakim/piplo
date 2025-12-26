@@ -19,24 +19,24 @@ export const Hero = () => {
             {/* Centered Content */}
             <div className="relative z-10 flex flex-col items-center justify-center text-center p-4 md:p-6 w-full max-w-4xl">
 
-                <h1 className="font-header text-3xl sm:text-5xl md:text-7xl text-white mb-6 drop-shadow-[4px_4px_0_#000] leading-tight max-sm:text-[2rem] animate-[slideUp_1s_ease-out_0.2s_forwards] opacity-0">
+                <h1 className="font-header text-3xl sm:text-5xl md:text-7xl text-white mb-6 drop-shadow-[4px_4px_0_#000] leading-tight max-sm:text-[2rem]">
                     Welcome to <br />
                     <span className="text-white block mt-2">PIPLO LAND</span>
                 </h1>
 
-                <p className="font-body text-gray-200 text-sm sm:text-lg md:text-xl max-w-xs sm:max-w-2xl mb-10 drop-shadow-md leading-relaxed animate-[slideUp_1s_ease-out_0.4s_forwards] opacity-0">
+                <p className="font-body text-gray-200 text-sm sm:text-lg md:text-xl max-w-xs sm:max-w-2xl mb-10 drop-shadow-md leading-relaxed">
                     Explore our retro-style pixel art world and join our community of idle nodes.
                 </p>
 
                 {/* Buttons & Socials Container */}
-                <div className="flex flex-col items-center gap-8 animate-[slideUp_1s_ease-out_0.6s_forwards] opacity-0">
+                <div className="flex flex-col items-center gap-8">
 
                     {/* Main CTAs */}
                     <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 w-full sm:w-auto px-12 sm:px-0">
                         <a href="#about" className="btn-retro no-underline text-center">
                             Explore Void
                         </a>
-                        <a href="#status" className="btn-retro bg-[#e0e0e0] text-black no-underline text-center">
+                        <a href="#support" className="btn-retro bg-[#e0e0e0] text-black no-underline text-center">
                             System Status
                         </a>
                     </div>
