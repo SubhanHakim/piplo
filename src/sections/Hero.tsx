@@ -1,4 +1,4 @@
-import heroBg from '../assets/bg.png'
+import heroBg from '../assets/bg.webp'
 import dexLogo from '../assets/dexscreener.svg'
 
 export const Hero = () => {

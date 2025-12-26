@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import piploLogo from '../assets/logo.png'
+import piploLogo from '../assets/logo.webp'
 
 export const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false)

@@ -1,9 +1,9 @@
-import art1 from '../assets/art/art1.png'
-import art2 from '../assets/art/art2.png'
-import art3 from '../assets/art/art3.png'
-import art4 from '../assets/art/art4.png'
-import art5 from '../assets/art/art5.png'
-import art6 from '../assets/art/art6.png'
+import art1 from '../assets/art/art1.webp'
+import art2 from '../assets/art/art2.webp'
+import art3 from '../assets/art/art3.webp'
+import art4 from '../assets/art/art4.webp'
+import art5 from '../assets/art/art5.webp'
+import art6 from '../assets/art/art6.webp'
 
 const artifacts = [
     { img: art1, id: '01', name: 'PIPLO – Holiday Idle' },
