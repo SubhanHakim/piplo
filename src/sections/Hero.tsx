@@ -51,7 +51,7 @@ export const Hero = () => {
                         </a>
 
                         {/* Dexscreener */}
-                        <a href="https://pump.fun/coin/F2fKuG8ZGSDnH33YXiZc1b5SLjAMUgaPhL6KQGQypump" target="_blank" rel="noreferrer" className="group p-3 bg-black/50 rounded-xl border border-white/10 hover:bg-black hover:border-white/50 transition-all hover:-translate-y-1">
+                        <a href="#" target="_blank" rel="noreferrer" className="group p-3 bg-black/50 rounded-xl border border-white/10 hover:bg-black hover:border-white/50 transition-all hover:-translate-y-1">
                             <img src={dexLogo} alt="Dexscreener" className="w-6 h-6 brightness-200 group-hover:brightness-100 transition-all" />
                         </a>
                     </div>

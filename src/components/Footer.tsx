@@ -31,7 +31,7 @@ export const Footer = () => {
 
                     {/* Dexscreener */}
                     <a
-                        href="https://pump.fun/coin/F2fKuG8ZGSDnH33YXiZc1b5SLjAMUgaPhL6KQGQypump"
+                        href="#"
                         target="_blank"
                         rel="noreferrer"
                         className="group p-2 bg-[#111] border-2 border-[#333] hover:border-[#e84c30] hover:bg-[#1a1625] transition-all hover:-translate-y-1 block"
