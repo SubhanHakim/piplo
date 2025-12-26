@@ -18,7 +18,7 @@ export const Footer = () => {
                 <div className="flex items-center gap-6">
                     {/* X (Twitter) */}
                     <a
-                        href="https://twitter.com"
+                        href="https://x.com/i/communities/2004458306002473013"
                         target="_blank"
                         rel="noreferrer"
                         className="group p-2 bg-[#111] border-2 border-[#333] hover:border-[#e84c30] hover:bg-[#1a1625] transition-all hover:-translate-y-1 block"
