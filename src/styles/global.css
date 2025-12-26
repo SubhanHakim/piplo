@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg-dark: #121212;
+  --color-text-main: #eeeeee;
+  --color-text-dim: #888888;
+  
+  --color-accent-orange: #e84c30;
+  --color-accent-orange-dark: #c03e28;
+  
+  --font-header: 'Press Start 2P', cursive;
+  --font-body: 'Silkscreen', cursive;
+
+  --animate-float: float 4s ease-in-out infinite;
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+  }
+}
+
+/* Global Styles */
+body {
+  @apply bg-bg-dark text-text-main font-body text-lg leading-relaxed min-h-screen overflow-x-hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom Components */
+@utility btn-retro {
+  @apply bg-accent-orange text-bg-dark font-header text-xs py-4 px-8 uppercase tracking-wider transition-transform active:translate-y-1 inline-block text-center cursor-pointer select-none;
+  /* Pixel art button style: heavy borders, cut corners look */
+  box-shadow: 
+    inset 2px 2px 0px rgba(255,255,255,0.4),
+    inset -2px -2px 0px rgba(0,0,0,0.4),
+    2px 2px 0px 0px #000;
+  border: 2px solid #000;
+}
+
+@utility btn-retro:hover {
+  @apply bg-accent-orange-dark;
+}

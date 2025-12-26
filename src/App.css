@@ -1,0 +1,245 @@
+:root {
+  --bg-dark: #0f0e17;
+  --bg-purple: #1a1625;
+  --bg-gradient-start: #13111a;
+  --bg-gradient-end: #1f1b2e;
+  
+  --text-main: #fffffe;
+  --text-dim: #a7a9be;
+  
+  --accent-pink: #ff61ef;
+  --accent-pink-dim: #d93bbb;
+  --accent-cyan: #2cb67d;
+  --accent-orange: #e84c30;
+  
+  --font-header: 'Press Start 2P', cursive;
+  --font-body: 'Silkscreen', cursive;
+  
+  --card-bg: rgba(40, 40, 55, 0.6);
+  --border-color: #4a4e69;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-dark);
+  background-image: 
+    radial-gradient(circle at 20% 20%, rgba(255, 97, 239, 0.15) 0%, transparent 40%),
+    radial-gradient(circle at 80% 80%, rgba(44, 182, 125, 0.1) 0%, transparent 40%);
+  color: var(--text-main);
+  font-family: var(--font-body);
+  font-size: 18px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* Star field effect */
+.stars {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background-image: 
+    radial-gradient(2px 2px at 20px 30px, #eee, rgba(0,0,0,0)),
+    radial-gradient(2px 2px at 40px 70px, #fff, rgba(0,0,0,0)),
+    radial-gradient(2px 2px at 50px 160px, #ddd, rgba(0,0,0,0)),
+    radial-gradient(2px 2px at 90px 40px, #fff, rgba(0,0,0,0)),
+    radial-gradient(2px 2px at 130px 80px, #fff, rgba(0,0,0,0)),
+    radial-gradient(2px 2px at 160px 120px, #ddd, rgba(0,0,0,0));
+  background-repeat: repeat;
+  background-size: 200px 200px;
+  opacity: 0.3;
+  z-index: 0;
+  animation: twinkle 5s infinite linear;
+}
+
+@keyframes twinkle {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-200px); } /* Parallax stars moving up */
+}
+
+/* Typography */
+h1 {
+  font-family: var(--font-header);
+  font-size: 3rem;
+  color: #fff;
+  text-align: center;
+  margin: 1rem 0;
+  text-shadow: 
+    4px 4px 0px #000,
+    0px 0px 20px var(--accent-pink);
+  line-height: 1.2;
+}
+
+h2 {
+  font-family: var(--font-body);
+  font-size: 1.2rem;
+  color: var(--accent-cyan);
+  margin-bottom: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  width: 100%;
+}
+
+.logo-container {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.logo-img {
+  width: 180px;
+  height: auto; 
+  image-rendering: pixelated;
+  filter: drop-shadow(0 0 20px rgba(255, 97, 239, 0.4));
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+/* Status Card - RPG HUD Style */
+.system-status {
+  background: var(--card-bg);
+  border: 4px solid var(--border-color);
+  border-radius: 16px;
+  padding: 2rem;
+  margin-bottom: 3rem;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 
+    0 8px 0 rgba(0,0,0,0.5),
+    0 0 0 4px #000 inset;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Decorative details on the card */
+.system-status::before {
+  content: "/// SYSTEM_LOG";
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  font-size: 0.6rem;
+  color: var(--text-dim);
+  opacity: 0.5;
+}
+
+.status-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.status-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-size: 0.7rem;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  margin-bottom: 0.3rem;
+}
+
+.value {
+  font-size: 1rem;
+  color: var(--text-main);
+  text-transform: uppercase;
+}
+
+.value.active { color: var(--accent-cyan); }
+.value.dormant { color: var(--accent-orange); }
+
+/* Narrative Text */
+.narrative {
+  text-align: center;
+  margin-bottom: 4rem;
+  max-width: 600px;
+}
+
+.narrative p {
+  margin-bottom: 1.5rem;
+  color: var(--text-dim);
+}
+
+/* Buttons */
+.cta-button {
+  background-color: var(--accent-pink);
+  color: #fff;
+  font-family: var(--font-header);
+  font-size: 0.8rem;
+  padding: 18px 32px;
+  border: none;
+  border-radius: 50px; /* Pill shape */
+  cursor: pointer;
+  box-shadow: 
+    0 6px 0 var(--accent-pink-dim),
+    0 12px 10px rgba(0,0,0,0.3);
+  transition: all 0.1s ease;
+  text-transform: uppercase;
+  margin-top: 1rem;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.cta-button:active {
+  transform: translateY(6px);
+  box-shadow: 
+    0 0 0 var(--accent-pink-dim),
+    0 4px 4px rgba(0,0,0,0.3);
+}
+
+.cta-button:hover {
+  filter: brightness(1.1);
+}
+
+/* Footer */
+.footer {
+  margin-top: auto;
+  padding: 2rem;
+  font-size: 0.7rem;
+  color: var(--text-dim);
+  opacity: 0.6;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  h1 { font-size: 2rem; }
+  .status-grid { grid-template-columns: 1fr; }
+  .container { padding: 1rem; }
+}
