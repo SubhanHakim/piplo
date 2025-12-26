@@ -31,7 +31,7 @@ export const Footer = () => {
 
                     {/* Dexscreener */}
                     <a
-                        href="https://dexscreener.com"
+                        href="https://pump.fun/coin/F2fKuG8ZGSDnH33YXiZc1b5SLjAMUgaPhL6KQGQypump"
                         target="_blank"
                         rel="noreferrer"
                         className="group p-2 bg-[#111] border-2 border-[#333] hover:border-[#e84c30] hover:bg-[#1a1625] transition-all hover:-translate-y-1 block"
@@ -48,6 +48,6 @@ export const Footer = () => {
 
             {/* Bottom Bar Pixel Decoration */}
             <div className="w-full h-2 bg-gradient-to-r from-transparent via-[#333] to-transparent mt-4 opacity-50"></div>
-        </footer>
+        </footer >
     )
 }

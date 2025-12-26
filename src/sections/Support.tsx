@@ -10,7 +10,7 @@ const supporters = [
         src: andyImg,
         status: 'ONLINE',
         latency: '12ms',
-        link: 'https://twitter.com/liminal_bardo'
+        link: 'https://x.com/liminal_bardo'
     },
     {
         id: 'NODE_02',
@@ -19,16 +19,16 @@ const supporters = [
         src: geniusImg,
         status: 'ONLINE',
         latency: '4ms',
-        link: 'https://twitter.com/repligate'
+        link: 'https://x.com/repligate'
     },
     {
         id: 'NODE_03',
         name: 'Lowkey',
-        username: '@Kimchi662',
+        username: '@Lowkeyyrzs',
         src: unknownImg,
         status: 'ONLINE',
         latency: '4ms',
-        link: 'https://twitter.com/Kimchi662'
+        link: 'https://x.com/lowkeyyrzs'
     },
 ]
 
